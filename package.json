@@ -1,0 +1,21 @@
+{
+  "name": "jmto",
+  "version": "0.0.0",
+  "description": "JMTO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JMTO",
+    "Minnnaar",
+    "Hierden",
+    "tuinonderhoud"
+  ],
+  "author": "E.MInnaar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.0.0",
+    "logfmt": "~1.1.2"
+  }
+}

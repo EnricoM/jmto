@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JMTO - John Minnaar Tuin & Onderhoud</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/hovenier.css">
+	 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+		var myLocation = new google.maps.LatLng(52.3598993, 5.6879975);
+        var map_options = {
+          center: myLocation,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+		
+		var marker = new google.maps.Marker({
+			position: myLocation,
+			map: map,
+			title: 'Hoveniersbedrijf John Minnaar'
+		});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8 column">
+				<h1>Welkom op de website van John Minnaar tuinonderhoud en klein onderhoud.</h1>
+			</div>
+			<div class="col-xs-4 column">
+				<h1>Bel ons: 06-10765192</h1>
+			</div>			
+		</div>
+		
+		<div class="row" id="phoneContact">
+			<div class="col-xs-12 column">
+				<p>U houdt van uw tuin. Wij onderhouden het.</p>
+			</div>
+		</div>	
+		
+<!--		
+		<div class="row" id="ourWork">
+			<div class="col-xs-12 column">
+				<img src="img/1046351130.jpg" class="img-responsive"></img>
+			</div>
+		</div>	
+-->
+
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="3"></li>				
+				<li data-target="#carousel-example-generic" data-slide-to="4"></li>				
+				<li data-target="#carousel-example-generic" data-slide-to="5"></li>				
+				<li data-target="#carousel-example-generic" data-slide-to="6"></li>				
+			</ol>
+			<div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/WP_000446_sm.jpg" alt="Slide 1" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 1</h3>
+					</div>					
+                </div>
+                <div class="item">
+					<img src="img/WP_000482_sm.jpg" alt="Slide 2" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 2</h3>
+					</div>					
+                </div>
+                <div class="item">
+					<img src="img/WP_000487_sm.jpg" alt="Slide 3" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 3</h3>
+					</div>					
+                </div>
+				<div class="item">
+                    <img src="img/WP_000502_sm.jpg" alt="Slide 4" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 4</h3>
+					</div>
+                </div>				
+                <div class="item">
+					<img src="img/WP_000336_sm.jpg" alt="Slide 5" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 5</h3>
+					</div>					
+                </div>
+                <div class="item">
+					<img src="img/WP_000753_sm.jpg" alt="Slide 6" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 6</h3>
+					</div>					
+                </div>
+                <div class="item">
+					<img src="img/WP_000754_sm.jpg" alt="Slide 7" class="img-responsive">
+					<div class="carousel-caption">
+						<h3>Slide 7</h3>
+					</div>					
+                </div>
+            </div>
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+        </div>
+		
+		<div class="row">
+			<div class="col-xs-6 column">
+				<div id="ourMission">
+					<h2>Wie zijn wij</h2>
+					Tuin en kleinonderhoudsbedrijf John Minnaar is een bedrijf wat zich voornamelijk richt op tuinonderhoud maar waar u ook
+					uitstekend terecht kunt voor diverse onderhoudsklussen in en om het huis.</br></br>
+					
+					Iedereen wil zodra het weer het toe laat genieten van zijn/haar tuin. Helaas kan niet iedereen zelf voorzien in het nodige
+					onderhoud van huis of tuin , bijvoorbeeld door tijdgebrek, gebrek aan het juiste gereedschap, verminderde gezondheid of 
+					gewoonweg het gebrek aan groene vingers of de twee zogenoemde linkerhanden.</p>
+				</div>
+				
+				<div id="ourService">
+					<h2>Wat bieden wij</h2>
+					Door jarenlange ervaring in tuinonderhoud en afbouw en gesteund door samenwerking zijn wij in staat de volgende diensten
+					aan te bieden: Wat betreft tuinonderhoud kunt u denken aan het reinigen en repareren van straatwerk, het snoeien of aanpoten
+					van heggen, onderhoud van uw gazon (verticuteren, doorzaaien, bemesten, maaien), schuttingen plaatsen of repareren na storm, 
+					borders onderhouden en aanplanten, vijver aanleg en onderhoud, de bouw van een houthok of prieel, bladruimen, 
+					kortom alle voorkomende tuinwerkzaamheden.</br></br>
+					
+					Qua kleinonderhoud in/aan huis kunt u denken aan bijvoorbeeld schilderwerk, klein tegelwerk (keuken, toilet, vloer), laminaat 
+					leggen, goten reinigen, wandreparaties, scheidingswanden, plafonds.				
+				</div>
+				
+			</div>
+			<div class="col-xs-6 column">
+				<div id="sendMessage">
+					<h2>Stuur ons een bericht</h2>
+					<p>Voor vragen kunt u altijd contact met ons opnemen.</p>
+					<form role="form" id="contact-form" action="MAILTO:jmtuinenonderhoud@gmail.com?subject=Hoveniersbedrijf John Minnaar" method="post" enctype="text/plain">
+						<div class="form-group">
+							<label for="naam">Naam</label>
+							<input type='text' class="form-control" id='naam' name='naam' placeholder="Uw naam"/>
+						</div>
+						<div class="form-group">
+							<label for="message">Bericht</label>
+							 <textarea id="message" name="message" class="form-control" rows="5" placeholder="Stel hier uw vragen"></textarea>
+						</div>	
+						<div class="form-actions">
+							<button class="btn btn-primary">Verzend</button>
+						</div>
+					</form>
+				</div>
+				<div>
+					<h2>Contactgegevens</h2>
+					<div class="col-xs-12 column" id="contactDetails">
+						<h4>Telefoon</h4>
+						06-10765192</br>
+						<h4>Email</h4>
+						<a href="mailto:jmtuinenonderhoud@gmail.com" target="blank">jmtuinenonderhoud@gmail.com</a>
+					</div>
+				</div>
+				<div id="map_canvas"></div>
+			</div>
+		</div>	
+		
+	</div>
+	<script src="./js/jquery-1.10.2.min.js"></script>	
+	<script src="./js/bootstrap.min.js"></script>	
+</body>
+
+</html>
